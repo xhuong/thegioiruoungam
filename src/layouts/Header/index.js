@@ -19,9 +19,11 @@ function Header() {
       <div className="container">
         {/* header with search  */}
         <div className="header_main">
+          {/* logo  */}
           <div className="header_logo_wrapper">
             <img src={require("../../assets/images/logo.png")} alt="" />
           </div>
+          {/* searchbox  */}
           <div className="header_searchbox_wrappper">
             <form action="" className="header_searchbox">
               <input type="text" placeholder="Tìm kiếm sản phẩm..." className="header_searchbox_input" />

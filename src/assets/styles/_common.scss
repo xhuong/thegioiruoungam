@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import "tailwindcss/tailwind.css";
 @import "antd/dist/antd.min.css";
 @import "variables";
 
@@ -22,6 +23,9 @@ a {
   display: inline-block;
   text-decoration: none;
   color: $blackColor;
+  &:hover {
+    color: inherit;
+  }
 }
 
 ul,
@@ -51,8 +55,7 @@ img {
 }
 
 .container-fluid {
-  width: 100vw;
-  max-width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -71,4 +74,84 @@ h6 {
 
 .section {
   padding: 30px 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.banner_wrapper {
+  border: 0.5px solid #f0f0f0;
+}
+
+// hidden sm
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+// hidden xs
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+// visible xs
+@media screen and (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+}
+// visible xs
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+
+.text-xs-custom {
+  font-size: 1.4rem;
+}
+
+.text-sm-custom {
+  font-size: 1.7rem;
+}
+
+.text-md-custom {
+  font-size: 2.4rem;
+}
+
+.max-line-three {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+.border-gray {
+  border: 0.2px solid #f0f0f0;
+}
+
+.border-red {
+  border: 2px solid rgb(239 68 68 / 1);
+}
+
+.primary_color {
+  color: $primaryColor;
+}
+
+.price_new {
+  font-size: 2.8rem;
+  color: $thirdColor;
+  font-weight: bold;
+}
+
+.price_old {
+  font-size: 1.8rem;
+  color: $grayTextLightColor;
+  text-decoration: line-through;
 }

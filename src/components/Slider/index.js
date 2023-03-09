@@ -16,7 +16,7 @@ function SimpleSlider() {
   };
   return (
     <div className="slider">
-      <div className="" style={{ maxWidth: "100%", margin: "0 auto" }}>
+      <div className="container-fluid">
         <Slider {...settings}>
           <div className="slider_item">
             <Link className="slider_item_link">

@@ -1,5 +1,6 @@
 import { Button as AntButton } from "antd";
 import styled from "styled-components";
+import "../../assets/styles/_variables.scss";
 
 const Button = styled(AntButton)`
   display: flex;
@@ -21,12 +22,13 @@ const Button = styled(AntButton)`
     `
   color: #000000;
   background-color: #f0f0f0;
+  
 
   &:hover,
   &:focus{
     color: #ffffff;
-    background-color: #000000;
-    border-color: #000000;
+    background-color: #b71d21;
+    border-color: #b71d21;
   }
   `}
 
@@ -35,13 +37,13 @@ const Button = styled(AntButton)`
     `
   border: none;
   color: #ffffff;
-  background-color: #151515;
+  background-color: #b71d21;
   border-radius: unset;
 
   &:hover,
   &:focus{
     color: #ffffff;
-    background-color: #151515;
+    background-color: #b71d21;
   }`}
 
   ${(props) =>
@@ -53,14 +55,16 @@ const Button = styled(AntButton)`
   ${(props) =>
     props.size === "md-btn" &&
     `
-  width: 166px;
+  width: 86px;
   `}
 
   ${(props) =>
     props.size === "full-btn" &&
     `
   width: 100%;
-  `}
+  `}  
+  ${(props) => props.className === "center-btn" && `margin: 0 auto;`}
+  ${(props) => props.textTransform === "uppercase" && `text-transform: uppercase;`}
 `;
 
 export default Button;

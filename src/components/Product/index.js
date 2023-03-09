@@ -1,4 +1,6 @@
-import { BsCartPlus } from "react-icons/bs";
+import { BsCartPlus, BsFillCartPlusFill } from "react-icons/bs";
+import { AiFillEye } from "react-icons/ai";
+import Button from "../Button";
 import "./index.scss";
 
 function Product() {
@@ -7,6 +9,15 @@ function Product() {
       <span className="product_discount">15%</span>
       <div className="product_image_wrapper">
         <img src={require("../../assets/images/products/product01.png")} alt="" />
+        <div className="product_button_wrapper">
+          <Button type="secondary" size="full-btn">
+            <BsFillCartPlusFill /> Thêm vào giỏ
+          </Button>
+
+          <Button type="secondary" size="full-btn">
+            <AiFillEye />
+          </Button>
+        </div>
       </div>
       <h5 className="product_title">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio reiciendis numquam.

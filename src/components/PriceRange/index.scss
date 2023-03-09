@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables";
+
+.price_range {
+  max-width: 100%;
+
+  padding: 10px;
+  border: 0.5px solid #f0f0f0;
+  &_heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  &_list {
+    max-height: 150px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #d8d4d4;
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #eda3a3;
+      border-radius: 20px;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      background: $primaryColor;
+    }
+  }
+  &_item {
+    margin: 8px 0;
+  }
+  .ant-checkbox-wrapper span:last-child {
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
+  }
+}
