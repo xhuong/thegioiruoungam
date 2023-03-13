@@ -1,12 +1,18 @@
 import { Col, Row } from "antd";
+import { useDispatch, useSelector } from "react-redux";
 import CaregorySidebar from "../../components/CaregorySidebar";
 import ListProductName from "../../components/ListProductName";
+import Modal from "../../components/Modal";
 import PriceRange from "../../components/PriceRange";
 import Sort from "../../components/Sort";
 import Section from "../Section";
 import SectionProduct from "../SectionProduct";
+import { closeModal, openModal } from "../../redux/slices/modalSlice";
+import ButtonSecondary from "../../components/ButtonSecondary";
 
 function CategoryLayoutSecondary() {
+  const dispatch = useDispatch();
+  const isActiveModal = useSelector((state) => state.modal.isActive);
   return (
     <Section>
       <Row gutter={24}>
@@ -25,6 +31,11 @@ function CategoryLayoutSecondary() {
           <SectionProduct />
         </Col>
       </Row>
+      {/* modal  */}
+      <ButtonSecondary type="primary" onClick={() => dispatch(openModal())}>
+        open modal
+      </ButtonSecondary>{" "}
+      {isActiveModal && <Modal />}
     </Section>
   );
 }

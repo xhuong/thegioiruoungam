@@ -1,4 +1,5 @@
 import React from "react";
+import AppActions from "../../components/AppActions";
 import SimpleSlider from "../../components/Slider";
 import Banner from "../../layouts/Banner";
 import BannerSecondary from "../../layouts/BannerSecondary";
@@ -15,27 +16,29 @@ function HomePage() {
     <React.Fragment>
       <Header />
 
-      <SimpleSlider />
+      {/* <SimpleSlider /> */}
 
-      <Banner />
+      {/* <Banner /> */}
 
-      <CategoryLayout />
+      {/* <CategoryLayout /> */}
 
-      <Section>
+      {/* <Section>
         <SectionProduct />
-      </Section>
+      </Section> */}
 
-      <BannerSecondary />
+      {/* <BannerSecondary /> */}
 
-      <Section>
+      {/* <Section>
         <SectionProduct />
-      </Section>
+      </Section> */}
 
-      <News />
+      {/* <News /> */}
 
-      <Introduction />
+      {/* <Introduction /> */}
 
-      <Footer />
+      {/* <Footer /> */}
+
+      {/* <AppActions /> */}
     </React.Fragment>
   );
 }

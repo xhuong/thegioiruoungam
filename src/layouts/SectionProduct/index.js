@@ -9,17 +9,17 @@ function SectionProduct() {
       {/* label product  */}
       <ProductLabel />
       <div className="section_product_wrapper">
-        <Row gutter={24}>
-          <Col xl={6}>
+        <Row gutter={[16, 16]}>
+          <Col xl={6} md={6} sm={8} xs={24}>
             <Product />
           </Col>
-          <Col xl={6}>
+          <Col xl={6} md={6} sm={8} xs={24}>
             <Product />
           </Col>
-          <Col xl={6}>
+          <Col xl={6} md={6} sm={8} xs={24}>
             <Product />
           </Col>
-          <Col xl={6}>
+          <Col xl={6} md={6} sm={8} xs={24}>
             <Product />
           </Col>
         </Row>

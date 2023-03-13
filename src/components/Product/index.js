@@ -9,7 +9,7 @@ function Product() {
       <span className="product_discount">15%</span>
       <div className="product_image_wrapper">
         <img src={require("../../assets/images/products/product01.png")} alt="" />
-        <div className="product_button_wrapper">
+        <div className="product_button_wrapper hidden-tablet-and-mobile">
           <Button type="secondary" size="full-btn">
             <BsFillCartPlusFill /> Thêm vào giỏ
           </Button>

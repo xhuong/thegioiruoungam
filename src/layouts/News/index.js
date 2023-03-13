@@ -10,14 +10,14 @@ function News() {
       <ProductLabel />
       {/* new card list */}
       <div className="section_news_wrapper">
-        <Row gutter={16}>
-          <Col xl={8}>
+        <Row gutter={[16, 16]}>
+          <Col xl={8} md={8} sm={24} xs={24}>
             <NewsCard />
           </Col>
-          <Col xl={8}>
+          <Col xl={8} md={8} sm={24} xs={24}>
             <NewsCard />
           </Col>
-          <Col xl={8}>
+          <Col xl={8} md={8} sm={24} xs={24}>
             <NewsCard />
           </Col>
         </Row>

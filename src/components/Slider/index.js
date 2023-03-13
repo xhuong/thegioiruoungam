@@ -17,7 +17,7 @@ function SimpleSlider() {
   return (
     <div className="slider">
       <div className="container-fluid">
-        <Slider {...settings}>
+        <Slider {...settings} className="hidden-xs">
           <div className="slider_item">
             <Link className="slider_item_link">
               <img src={require("../../assets/images/sliders/slider01.png")} alt="" />
@@ -31,6 +31,25 @@ function SimpleSlider() {
           <div className="slider_item">
             <Link className="slider_item_link">
               <img src={require("../../assets/images/sliders/slider02.png")} alt="" />
+            </Link>
+          </div>
+        </Slider>
+
+        {/* slide mobile  */}
+        <Slider {...settings} className="hidden-sm hidden-md hidden-lg hidden-xl hidden-xxl">
+          <div className="slider_item">
+            <Link className="slider_item_link">
+              <img src={require("../../assets/images/sliders/slider04.png")} alt="" />
+            </Link>
+          </div>
+          <div className="slider_item">
+            <Link className="slider_item_link">
+              <img src={require("../../assets/images/sliders/slider05.png")} alt="" />
+            </Link>
+          </div>
+          <div className="slider_item">
+            <Link className="slider_item_link">
+              <img src={require("../../assets/images/sliders/slider06.png")} alt="" />
             </Link>
           </div>
         </Slider>

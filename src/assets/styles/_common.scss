@@ -43,6 +43,7 @@ p {
 
 img {
   display: block;
+  margin: 0 auto;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -84,33 +85,6 @@ h6 {
   border: 0.5px solid #f0f0f0;
 }
 
-// hidden sm
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm {
-    display: none !important;
-  }
-}
-
-// hidden xs
-@media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
-  }
-}
-
-// visible xs
-@media screen and (max-width: 767px) {
-  .visible-xs {
-    display: block !important;
-  }
-}
-// visible xs
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .visible-sm {
-    display: block !important;
-  }
-}
-
 .text-xs-custom {
   font-size: 1.4rem;
 }
@@ -124,16 +98,19 @@ h6 {
 }
 
 .max-line-three {
-  width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .border-gray {
   border: 0.2px solid #f0f0f0;
+}
+
+.border-bttom-gray {
+  border-bottom: 0.2px solid #f0f0f0;
 }
 
 .border-red {
@@ -154,4 +131,52 @@ h6 {
   font-size: 1.8rem;
   color: $grayTextLightColor;
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 1169px) {
+  .hidden-tablet-and-mobile {
+    display: none !important;
+  }
+}
+
+// xs < 576px
+@media screen and (max-width: 575px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+// sm >= 576px
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+// md >= 768px
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+// lg >= 992px
+@media screen and (min-width: 992px) and (max-width: 1999px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+// xl >= 1200px
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .hidden-xl {
+    display: none !important;
+  }
+}
+
+// xxl >= 1600px
+@media screen and (min-width: 1600px) {
+  .hidden-xxl {
+    display: none !important;
+  }
 }
