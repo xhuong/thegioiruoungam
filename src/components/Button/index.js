@@ -63,7 +63,6 @@ const Button = styled(AntButton)`
     `
   width: 100%;
   `}  
-  ${(props) => props.className === "center-btn" && `margin: 0 auto;`}
   ${(props) => props.textTransform === "uppercase" && `text-transform: uppercase;`}
 `;
 

@@ -3,23 +3,20 @@ import Product from "../../components/Product";
 import ProductLabel from "../../components/ProductLabel";
 import "./index.scss";
 
-function SectionProduct() {
+function SectionProduct({ title, ...props }) {
   return (
     <div className="section_product">
       {/* label product  */}
-      <ProductLabel />
+      <ProductLabel title={title} />
       <div className="section_product_wrapper">
         <Row gutter={[16, 16]}>
-          <Col xl={6} md={6} sm={8} xs={24}>
+          <Col xl={8} md={8} sm={8} xs={12}>
             <Product />
           </Col>
-          <Col xl={6} md={6} sm={8} xs={24}>
+          <Col xl={8} md={8} sm={8} xs={12}>
             <Product />
           </Col>
-          <Col xl={6} md={6} sm={8} xs={24}>
-            <Product />
-          </Col>
-          <Col xl={6} md={6} sm={8} xs={24}>
+          <Col xl={8} md={8} sm={8} xs={12}>
             <Product />
           </Col>
         </Row>

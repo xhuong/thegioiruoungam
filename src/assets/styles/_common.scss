@@ -43,7 +43,7 @@ p {
 
 img {
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -97,12 +97,22 @@ h6 {
   font-size: 2.4rem;
 }
 
+.max-line-one {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
 .max-line-three {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   text-overflow: ellipsis;
+  word-break: break-all;
   overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 
 .border-gray {
@@ -158,12 +168,18 @@ h6 {
   .hidden-md {
     display: none !important;
   }
+  .container {
+    max-width: 750px;
+  }
 }
 
 // lg >= 992px
-@media screen and (min-width: 992px) and (max-width: 1999px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .hidden-lg {
     display: none !important;
+  }
+  .container {
+    max-width: 970px;
   }
 }
 

@@ -7,15 +7,13 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <Row gutter={16}>
-          <Col xl={8}>
-            <h3 className="footer_heading">
-              Lorem ipsum dolor sit amet, consectetur lorem1 adipisicing elit. Illum doloribus voluptates ut!
-            </h3>
+        <Row gutter={[16, 16]}>
+          <Col xl={8} lg={8} md={24} sm={24} xs={24}>
+            <h3 className="footer_heading">Công ty Nhung Huơu Trầm Nhân</h3>
             <ul className="footer_list">
               <li className="footer_item">
                 <span className="footer_item--bold">Hotline {"(24/7)"}:</span>
-                <span className="footer_item_phonenumber">0999.999.999</span> {"( 08:00-21:30 )"}
+                <span className="footer_item_phonenumber">0972.140.350</span> {"( 08:00-21:30 )"}
               </li>
               <li className="footer_item">
                 <span className="footer_item--bold">Email:</span>
@@ -57,84 +55,83 @@ function Footer() {
               </li>
             </ul>
           </Col>
-          <Col xl={2}>
+          <Col xl={4} lg={4} md={12} sm={12} xs={24}>
             <h3 className="footer_heading">Danh mục</h3>
             <ul className="footer_list">
               <li className="footer_item">
                 <Link>Giới thiệu</Link>
               </li>
               <li className="footer_item">
-                <Link>Giới thiệu</Link>
+                <Link>Cao nhung hươu</Link>
               </li>
               <li className="footer_item">
-                <Link>Giới thiệu</Link>
+                <Link>Cao huơu</Link>
               </li>
               <li className="footer_item">
-                <Link>Giới thiệu</Link>
+                <Link>Cao ban long</Link>
               </li>
               <li className="footer_item">
-                <Link>Giới thiệu</Link>
+                <Link>Nhung hươu tươi</Link>
               </li>
               <li className="footer_item">
-                <Link>Giới thiệu</Link>
+                <Link>Nhung hươu khô</Link>
+              </li>
+              <li className="footer_item">
+                <Link>Rượu huyết nhung hươu</Link>
+              </li>
+              <li className="footer_item">
+                <Link>Mật ong rừng</Link>
               </li>
             </ul>
           </Col>
-          <Col xl={4}>
+          <Col xl={4} lg={4} md={12} sm={12} xs={24}>
             <h3 className="footer_heading">Hỗ trợ khách hàng</h3>
             <ul className="footer_list">
               <li className="footer_item">
                 <Link>Tin tức</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Liên hệ</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Hướng dẫn mua hàng</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Chính sách giao nhận</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Chính sách đổi trả</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Chính sách bảo mật</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
+                <Link>Chính sách thanh toán</Link>
               </li>
               <li className="footer_item">
-                <Link>Tin tức</Link>
-              </li>
-              <li className="footer_item">
-                <img src={require("../../assets/images/bo_cong_thuong.png")} alt="" />
+                <div className="footer_item_image_wrapper">
+                  <img src={require("../../assets/images/bo_cong_thuong.png")} alt="" />
+                </div>
               </li>
             </ul>
           </Col>
-          <Col xl={10}>
+          <Col xl={8} lg={8} md={24} sm={24} xs={24}>
             <h3 className="footer_heading">Chăm sóc khách hàng</h3>
             <ul className="footer_list">
               <li className="footer_item">
                 <span className="footer_item--bold">Hotline:</span>
                 0908.023.123
               </li>
-              <li className="footer_item">
-                <span className="footer_item--bold">Hotline:</span>
-                0908.023.123
-              </li>
               <li>
                 <span className="footer_item--bold">Hỗ trợ thanh toán:</span>
-                <div className="footer_image wrapper">
-                  <img src={require("../../assets/images/checkout/checkout.png")} alt="" />
-                </div>
-                <p>{"(*) Công ty chúng tôi không bán rượu cho người dưới 18 tuổi"}</p>
+                <img src={require("../../assets/images/checkout/checkout.png")} alt="" />
+                <p className="footer_note">{"(*) Công ty chúng tôi không bán rượu cho người dưới 18 tuổi"}</p>
               </li>
             </ul>
           </Col>
         </Row>
         <p className="footer_license">
-          © Bản quyền thuộc về Công ty TNHH TM Nguyên Đức Royal | Sản phẩm chính hãng Thegioiruoungam.com
+          © Bản quyền thuộc về Công ty Nhung Hươu Trầm Nhân | Sản phẩm chính hãng nhunghuoutramnhan.com
         </p>
       </div>
     </footer>

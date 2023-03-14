@@ -29,7 +29,15 @@ function NewsCard() {
           consectetur adipisicing elit. At quaerat maiores nam? Lorem ipsum dolor sit amet consectetur.
         </Link>
 
-        <Button className="center-btn" textTransform="uppercase" type="primary" size="md-btn">
+        <Button className="mx-auto hidden-xs hidden-sm" textTransform="uppercase" type="primary" size="md-btn">
+          Đọc tin
+        </Button>
+        <Button
+          className="mx-auto  hidden-md hidden-lg hidden-xl hidden-xxl"
+          textTransform="uppercase"
+          type="secondary"
+          size="full-btn"
+        >
           Đọc tin
         </Button>
       </div>

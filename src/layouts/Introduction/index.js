@@ -7,14 +7,14 @@ import "./index.scss";
 function Introduction() {
   return (
     <Section>
-      <Row gutter={24}>
-        <Col xl={12}>
+      <Row gutter={[8, 16]}>
+        <Col xl={12} lg={12} md={24} sm={24} xs={24}>
           <ProductLabel title="Ý kiến khách hàng" />
           <div className="mt-20">
             <SliderSecondary />
           </div>
         </Col>
-        <Col xl={12}>
+        <Col xl={12} lg={12} md={24} sm={24} xs={24}>
           <ProductLabel title="Giới thiệu công ty" />
           <div className="introduce_image_wrapper">
             <img src={require("../../assets/images/introduce/company.png")} alt="" />

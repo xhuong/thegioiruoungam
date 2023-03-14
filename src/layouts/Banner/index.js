@@ -3,7 +3,7 @@ import "./index.scss";
 
 function Banner() {
   return (
-    <div className="banner">
+    <div className="banner hidden-xs hidden-sm">
       <div className="container">
         <Row gutter={12}>
           <Col xl={6} sm={6}>

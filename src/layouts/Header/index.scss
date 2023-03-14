@@ -37,6 +37,19 @@
     &_input::placeholder {
       color: #d8d8d8;
     }
+
+    // mobile
+    &_mobile {
+      margin-bottom: 20px;
+      &_form {
+        display: flex;
+        input {
+          flex: 1;
+          border: 1px solid #f0f0f0;
+          padding-left: 8px;
+        }
+      }
+    }
   }
 
   &_hotline {

@@ -44,6 +44,9 @@
         color: $primaryColor;
       }
     }
+
+    &_image_wrapper {
+    }
   }
 
   &_item_contact {
@@ -64,5 +67,21 @@
     border-top: 0.1px solid #ececec;
     padding: 16px 0;
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    &_item {
+      &_image_wrapper {
+        max-width: 160px;
+      }
+    }
+    &_note {
+      margin-bottom: 12px;
+    }
+    &_license {
+      text-align: center;
+    }
   }
 }

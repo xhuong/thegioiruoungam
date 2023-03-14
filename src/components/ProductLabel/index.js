@@ -10,7 +10,7 @@ function ProductLabel({ title = "Tin tức", ...props }) {
       </span>
       <div className="product_label_heading_wrapper">
         <h2 className="product_label_heading">{title}</h2>
-        <ul className="product_label_list">
+        <ul className="product_label_list hidden-sm hidden-xs">
           <li className="product_label_item">
             <Link className="product_label_link">Xem thêm</Link>
           </li>

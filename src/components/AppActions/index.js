@@ -6,7 +6,7 @@ import "./index.scss";
 
 function AppActions() {
   return (
-    <div className="app_action_list">
+    <div className="app_action_list hidden-xs hidden-sm">
       <Link className="app_action_item">
         <div className="app_action_item_wrapper">
           <img src={cartSvg} alt="" />
