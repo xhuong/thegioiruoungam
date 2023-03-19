@@ -11,6 +11,7 @@ import Introduction from "../../layouts/Introduction";
 import News from "../../layouts/News";
 import Section from "../../layouts/Section";
 import SectionProduct from "../../layouts/SectionProduct";
+import { globalData } from "../../data";
 
 function HomePage() {
   return (
@@ -24,13 +25,13 @@ function HomePage() {
       <CategoryLayout title="Nhung hươu" />
 
       <Section>
-        <SectionProduct title="Sản phẩm bán chạy" />
+        <SectionProduct title="Sản phẩm bán chạy" products={globalData.products.slice(0, 3)} />
       </Section>
 
       <BannerSecondary />
 
       <Section>
-        <SectionProduct title="Sản phẩm nổi bật" />
+        <SectionProduct title="Sản phẩm nổi bật" products={globalData.products.slice(7, 10)} />
       </Section>
 
       <News />

@@ -1,17 +1,18 @@
 import { Row, Col } from "antd";
-import CaregorySidebar from "../../components/CaregorySidebar";
+import CategorySidebar from "../../components/CategorySidebar";
 import Section from "../Section";
 import SectionProduct from "../SectionProduct";
+import { globalData } from "../../data";
 
 function CategoryLayout(props) {
   return (
     <Section>
       <Row gutter={[16, 16]}>
         <Col xl={6} lg={6} className="hidden-md hidden-sm hidden-xs">
-          <CaregorySidebar />
+          <CategorySidebar />
         </Col>
         <Col xl={18} lg={18} md={24} sm={24} xs={24}>
-          <SectionProduct title={props.title} />
+          <SectionProduct title={props.title} products={globalData.products.slice(3, 6)} />
         </Col>
       </Row>
     </Section>

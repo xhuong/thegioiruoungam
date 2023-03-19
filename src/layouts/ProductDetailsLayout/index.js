@@ -3,10 +3,13 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import { BsCartPlus, BsFillTelephoneFill, BsGift } from "react-icons/bs";
 import ButtonSecondary from "../../components/ButtonSecondary";
 import Rate from "../../components/Rating";
+import { formatPrice } from "../../Utils";
 import Section from "../Section";
 import "./index.scss";
 
-function ProductDetailsLayout() {
+function ProductDetailsLayout({ data }) {
+  const { id, name, imageUrl, oldPrice, newPrice, star, categoryId, discount, description } = data;
+
   return (
     <Section>
       {/* product  */}
@@ -15,28 +18,28 @@ function ProductDetailsLayout() {
           {/* image  */}
           <Row>
             <Col xl={24} md={24} sm={24}>
-              <img src={require("../../assets/images/products/product02.png")} alt="" />
+              <img src={imageUrl} alt="" />
             </Col>
           </Row>
           {/* image list  */}
           <Row gutter={8} className="mt-4 mb-4 md:mb-0">
             <Col className="cursor-pointer border-red-700 border-solid border-2" xl={6} md={6} sm={6} xs={6}>
-              <img src={require("../../assets/images/products/product02.png")} alt="" />
+              <img src={imageUrl} alt="" />
             </Col>
             <Col className="cursor-pointer" xl={6} md={6} sm={6} xs={6}>
-              <img src={require("../../assets/images/products/product02.png")} alt="" />
+              <img src={imageUrl} alt="" />
             </Col>
             <Col className="cursor-pointer hidden-sm hidden-xs" xl={6} md={6}>
-              <img src={require("../../assets/images/products/product02.png")} alt="" />
+              <img src={imageUrl} alt="" />
             </Col>
             <Col className="cursor-pointer hidden-sm hidden-xs" xl={6} md={6}>
-              <img src={require("../../assets/images/products/product02.png")} alt="" />
+              <img src={imageUrl} alt="" />
             </Col>
           </Row>
         </Col>
         <Col xl={8} lg={10} md={12}>
           {/* name  */}
-          <h3 className="font-bold uppercase text-md-custom">Bình ngẩu pín hươu 4,8 lít</h3>
+          <h3 className="font-bold uppercase text-md-custom">{name}</h3>
 
           <p className="flex items-center">
             <Rate allowHalf disabled value={4.5} />
@@ -59,36 +62,33 @@ function ProductDetailsLayout() {
           </p>
 
           <div className="flex items-baseline gap-x-4">
-            <span className="price_new">2,500,000₫</span>
-            <span className="price_old">3,800,000₫</span>
+            <span className="price_new">{formatPrice(newPrice)}đ</span>
+            <span className="price_old">{formatPrice(oldPrice)}đ</span>
           </div>
 
-          <p className="mt-4 max-line-4 text-lg">
-            Bình cá ngựa 0.75l được ngâm kết hợp từ nhiều nguyên liệu đem lại nhiều tác dụng hiệu quả, là sản phẩm chất
-            lượng bồi, tăng cường sinh lực mà phái mạnh ưu thích
-          </p>
+          <p className="mt-4 max-line-4 text-lg">{description}</p>
 
           <ul className="mt-10 relative p-4 py-8 border-red">
             <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />
               <p className="max-line-three text-lg">Cung cấp sản phẩm số lượng lớn cho doanh nghiệp. Có hóa đơn VAT.</p>
             </li>
             <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />
               <p className="max-line-three text-lg">
                 Hotline/Zalo {"("}24/7{")"}: 0375.524.580
               </p>
             </li>
             <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />
               <p className="max-line-three text-lg">Giao hàng nhanh trên toàn quốc.</p>
             </li>
             <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />
               <p className="max-line-three text-lg">Giao hàng hỏa tốc 2h tại ...</p>
             </li>
             <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />
               <p className="max-line-three text-lg">
                 Hỗ trợ trả góp 0% lãi suất qua thẻ tín dụng với hóa đơn trên 3.000.000 vnđ
               </p>

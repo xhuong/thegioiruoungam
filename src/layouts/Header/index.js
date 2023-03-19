@@ -80,25 +80,39 @@ function Header() {
         <div className="container">
           <ul className="header_navbar_list">
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Giới thiệu</Link>
+              <Link className="header_navbar_item--link" to="/introduction">
+                Giới thiệu
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Cao Nhung Hươu</Link>
+              <Link className="header_navbar_item--link" to="/category/1">
+                Cao Nhung Hươu
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Cao hươu</Link>
+              <Link className="header_navbar_item--link" to="/category/2">
+                Cao hươu
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Cao ban long</Link>
+              <Link className="header_navbar_item--link" to="/category/3">
+                Cao ban long
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Nhung hươu</Link>
+              <Link className="header_navbar_item--link" to="/category/4">
+                Nhung hươu
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Rượu</Link>
+              <Link className="header_navbar_item--link" to="/category/5">
+                Rượu
+              </Link>
             </li>
             <li className="header_navbar_item">
-              <Link className="header_navbar_item--link">Mật ong rừng</Link>
+              <Link className="header_navbar_item--link" to="/category/6">
+                Mật ong
+              </Link>
             </li>
           </ul>
         </div>
