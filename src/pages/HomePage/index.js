@@ -37,11 +37,11 @@ function HomePage() {
 
       <Introduction />
 
-      <Footer />
-
       <AppActions />
 
       <AppActionsMobile />
+
+      <Footer />
     </React.Fragment>
   );
 }

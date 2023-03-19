@@ -10,7 +10,7 @@
     align-items: center;
     column-gap: 8px;
     padding: 6px 10px;
-    font-size: 1.7rem;
+    font-size: 17px;
   }
   &_list {
   }
@@ -26,6 +26,10 @@
     }
     &_image_wrappper {
       width: 22px;
+    }
+    &.active &_link {
+      color: $primaryColor;
+      font-weight: bold;
     }
   }
 }

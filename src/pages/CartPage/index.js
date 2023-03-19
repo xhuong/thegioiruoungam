@@ -10,9 +10,11 @@ function CartPage() {
   return (
     <React.Fragment>
       <Header />
-      <Section>
-        <Breadcrumb items={[{ name: "Trang chủ" }, { name: "Giỏ hàng của bạn" }]} />
-      </Section>
+      <div className="pt-4">
+        <div className="container">
+          <Breadcrumb items={[{ name: "Trang chủ" }, { name: "Giỏ hàng của bạn" }]} />
+        </div>
+      </div>
       <CartEmpty />
       <Cart />
       <Footer />

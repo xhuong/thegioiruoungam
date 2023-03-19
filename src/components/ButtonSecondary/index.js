@@ -7,6 +7,7 @@ const ButtonSecondary = styled(AntButton)`
   align-items: center;
   justify-content: center;
   column-gap: 6px;
+  // border-radius: 4px;
 
   cursor: pointer;
   height: 46px;
@@ -32,6 +33,14 @@ const ButtonSecondary = styled(AntButton)`
     `
   color:#ffffff;
   background-color: #288ad6;
+  border-radius: 4px;
+  `}
+
+  ${(props) =>
+    props.type === "fourth" &&
+    `
+  color:#ffffff;
+  background-color: #338dbc;
   border-radius: 4px;
   `}
 

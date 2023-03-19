@@ -6,8 +6,8 @@ import { IoCloseCircleSharp, IoSearch } from "react-icons/io5";
 import { closeMenu } from "../../redux/slices/menuMobileSlice";
 import binhNhungSvg from "../../assets/images/mobile/products/binh_nhung_huou.png";
 import nhungHuouTuoiSvg from "../../assets/images/mobile/products/nhung_huou_tuoi.png";
-import "./index.scss";
 import { useEffect } from "react";
+import "./index.scss";
 
 function MenuMobile() {
   const dispatch = useDispatch();

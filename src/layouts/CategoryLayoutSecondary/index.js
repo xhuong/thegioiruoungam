@@ -15,8 +15,8 @@ function CategoryLayoutSecondary() {
   const isActiveModal = useSelector((state) => state.modal.isActive);
   return (
     <Section>
-      <Row gutter={24}>
-        <Col xl={6}>
+      <Row gutter={16}>
+        <Col xl={6} lg={6} className="hidden-xs hidden-sm hidden-md">
           <CaregorySidebar />
           <div className="mt-2">
             <PriceRange />
@@ -25,16 +25,16 @@ function CategoryLayoutSecondary() {
             <img src={require("../../assets/images/banners/banner05.png")} alt="" />
           </div>
         </Col>
-        <Col xl={18}>
+        <Col xl={18} lg={18}>
           <ListProductName />
           <Sort />
-          <SectionProduct />
+          <SectionProduct title="Nhung hươu" />
         </Col>
       </Row>
       {/* modal  */}
       <ButtonSecondary type="primary" onClick={() => dispatch(openModal())}>
         open modal
-      </ButtonSecondary>{" "}
+      </ButtonSecondary>
       {isActiveModal && <Modal />}
     </Section>
   );

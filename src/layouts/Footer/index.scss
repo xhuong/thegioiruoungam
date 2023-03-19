@@ -5,7 +5,7 @@
   border-top: 0.05px solid #f0eded;
   color: $grayTextLightColor;
   &_heading {
-    font-size: 1.4rem;
+    font-size: 14px;
     color: $primaryColor;
     text-transform: uppercase;
     font-weight: bold;
@@ -44,9 +44,6 @@
         color: $primaryColor;
       }
     }
-
-    &_image_wrapper {
-    }
   }
 
   &_item_contact {
@@ -61,12 +58,12 @@
   }
   &_item_phonenumber {
     color: $primaryColor;
-    font-size: 1.8rem;
+    font-size: 18px;
   }
   &_license {
     border-top: 0.1px solid #ececec;
     padding: 16px 0;
-    font-size: 1.3rem;
+    font-size: 13px;
   }
 }
 

@@ -1,11 +1,18 @@
 import { BsCartPlus, BsFillCartPlusFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import { AiFillEye } from "react-icons/ai";
 import Button from "../Button";
 import "./index.scss";
 
 function Product() {
+  const navigate = useNavigate();
   return (
-    <div className="product">
+    <div
+      className="product"
+      onClick={() => {
+        navigate("/product/1/details");
+      }}
+    >
       <span className="product_discount">15%</span>
       <div className="product_image_wrapper">
         <img src={require("../../assets/images/products/product01.png")} alt="" />

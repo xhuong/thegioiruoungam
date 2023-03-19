@@ -9,7 +9,7 @@ const Button = styled(AntButton)`
   column-gap: 10px;
 
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.25;
   text-transform: capitalize;
   height: 46px;
@@ -44,6 +44,20 @@ const Button = styled(AntButton)`
   &:focus{
     color: #ffffff;
     background-color: #b71d21;
+  }`}
+
+  ${(props) =>
+    props.type === "third" &&
+    `
+  border: none;
+  color: #ffffff;
+  background-color: #c8c8c8;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus{
+    color: #ffffff;
+    background-color: #c8c8c8;
   }`}
 
   ${(props) =>

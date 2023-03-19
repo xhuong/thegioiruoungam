@@ -11,12 +11,12 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  // font-size: 62.5%;
 }
 
 body {
   font-family: $primaryFont;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 a {
@@ -43,7 +43,6 @@ p {
 
 img {
   display: block;
-  // margin: 0 auto;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -86,15 +85,15 @@ h6 {
 }
 
 .text-xs-custom {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .text-sm-custom {
-  font-size: 1.7rem;
+  font-size: 17px;
 }
 
 .text-md-custom {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 .max-line-one {
@@ -110,9 +109,18 @@ h6 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  word-break: break-all;
+  word-break: break-word;
   overflow: hidden;
   -webkit-line-clamp: 3;
+}
+
+.max-line-two {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 .border-gray {
@@ -127,20 +135,32 @@ h6 {
   border: 2px solid rgb(239 68 68 / 1);
 }
 
-.primary_color {
+.text-primary-color {
   color: $primaryColor;
 }
 
+.bg-primary-color {
+  background-color: $primaryColor;
+}
+
 .price_new {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: $thirdColor;
   font-weight: bold;
 }
 
 .price_old {
-  font-size: 1.8rem;
+  font-size: 18px;
   color: $grayTextLightColor;
   text-decoration: line-through;
+}
+
+.w-230 {
+  width: 230px;
+}
+
+.max-w-230 {
+  max-width: 230px;
 }
 
 @media screen and (max-width: 1169px) {

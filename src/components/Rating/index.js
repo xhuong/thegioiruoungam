@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Rate = styled(RateAnt)`
   &.ant-rate {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 `;
 

@@ -9,15 +9,15 @@ function Footer() {
       <div className="container">
         <Row gutter={[16, 16]}>
           <Col xl={8} lg={8} md={24} sm={24} xs={24}>
-            <h3 className="footer_heading">Công ty Nhung Huơu Trầm Nhân</h3>
+            <h3 className="footer_heading">Công ty Nhung Hươu Trầm Nhân</h3>
             <ul className="footer_list">
               <li className="footer_item">
                 <span className="footer_item--bold">Hotline {"(24/7)"}:</span>
-                <span className="footer_item_phonenumber">0972.140.350</span> {"( 08:00-21:30 )"}
+                <span className="footer_item_phonenumber">0375.524.580</span> {"( 08:00-21:30 )"}
               </li>
               <li className="footer_item">
                 <span className="footer_item--bold">Email:</span>
-                abc@gmail.com
+                tramnhanhti123@gmail.com
               </li>
               <li className="footer_item">
                 <span className="footer_item--bold">Địa chỉ tại HCM:</span>
@@ -120,7 +120,7 @@ function Footer() {
             <ul className="footer_list">
               <li className="footer_item">
                 <span className="footer_item--bold">Hotline:</span>
-                0908.023.123
+                0375.524.580
               </li>
               <li>
                 <span className="footer_item--bold">Hỗ trợ thanh toán:</span>

@@ -1,4 +1,5 @@
 import { Row, Col, InputNumber } from "antd";
+import Button from "../../components/Button";
 import ButtonSecondary from "../../components/ButtonSecondary";
 import Section from "../Section";
 import "./index.scss";
@@ -6,128 +7,76 @@ import "./index.scss";
 function Cart() {
   return (
     <Section>
-      <p className="uppercase mr-2">
-        Giỏ hàng:{" "}
+      <p className="uppercase mr-2 mb-8">
+        Giỏ hàng:
         <span className="capitalize">
           {"("}0 sản phẩm {")"}
         </span>
       </p>
-      <Row gutter={6}>
-        <Col xl={18}>
-          {/* cart item  */}
-          <Row gutter={6} className="cart_item">
-            <Col xl={12}>
-              <div className="flex">
-                <div className="mr-2" style={{ maxWidth: "240px" }}>
-                  <img src={require("../../assets/images/products/product01.png")} alt="" />
+      <Row gutter={16}>
+        <Col xl={18} lg={18} md={24} sm={24} xs={24}>
+          <Row gutter={8} className="border-gray-200 cart_item">
+            <Col xl={6} lg={6} md={6} sm={6} xs={6}>
+              <img src={require("../../assets/images/products/product01.png")} alt="" />
+            </Col>
+            <Col xl={18} lg={18} md={18} sm={18} xs={18}>
+              <div className="flex justify-between">
+                <div className="cart_item_info">
+                  <h3 className="max-line-two mr-2 capitalize">
+                    Lorem ipsum dolor sit amet consectetur itaque accusamus eius!
+                  </h3>
+                  <p>Chất lượng</p>
+                  <p className="hidden-md hidden-lg hidden-xl hidden-xxl text-red-500 font-semibold">2.500.500đ</p>
                 </div>
-                <p className="self-start flex-1 max-line-three">
-                  {" "}
-                  Bình ngẩu pín huơu 4.8 lít Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde totam porro
-                  Lorem ipsum dolor sit amet consectetur. consectetur.
-                </p>
-              </div>
-            </Col>
-            <Col xl={6}>
-              <p className="text-center">2,500,000đ</p>
-            </Col>
-            <Col xl={6}>
-              <div className="flex flex-col items-center">
-                <InputNumber min={1} max={10} defaultValue={1} size="large" />
-                <span className="mt-1 cursor-pointer hover:underline hover:text-red-400">Xoá</span>
+                <div className="cart_item_price hidden-sm hidden-xs">
+                  <span>2.600.000d</span>
+                </div>
+                <div className="cart_item_quantity flex flex-col items-center">
+                  <InputNumber min={1} max={10} defaultValue={1} size="large" />
+                  <span className="py-4 w-full text-center hover:underline hover:text-red-500 cursor-pointer">Xoá</span>
+                </div>
               </div>
             </Col>
           </Row>
-          {/* end cart item  */}
-          {/* cart item  */}
-          <Row gutter={6} className="cart_item">
-            <Col xl={12}>
-              <div className="flex">
-                <div className="mr-2" style={{ maxWidth: "240px" }}>
-                  <img src={require("../../assets/images/products/product01.png")} alt="" />
-                </div>
-                <p className="self-start flex-1 max-line-three">
-                  {" "}
-                  Bình ngẩu pín huơu 4.8 lít Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde totam porro
-                  Lorem ipsum dolor sit amet consectetur. consectetur.
-                </p>
+          <Row gutter={8} className="border-gray-200 cart_item">
+            <Col xl={6} lg={6} md={6} sm={6} xs={6}>
+              <div>
+                <img src={require("../../assets/images/products/product01.png")} alt="" />
               </div>
             </Col>
-            <Col xl={6}>
-              <p className="text-center">2,500,000đ</p>
-            </Col>
-            <Col xl={6}>
-              <div className="flex flex-col items-center">
-                <InputNumber min={1} max={10} defaultValue={1} size="large" />
-                <span className="mt-1 cursor-pointer hover:underline hover:text-red-400">Xoá</span>
+            <Col xl={18} lg={18} md={18} sm={18} xs={18}>
+              <div className="flex justify-between">
+                <div className="cart_item_info">
+                  <h3 className="max-line-two mr-2 capitalize">itaque accusamus eius!</h3>
+                  <p>Chất lượng</p>
+                  <p className="hidden-md hidden-lg hidden-xl hidden-xxl text-red-500 font-semibold">2.500.500đ</p>
+                </div>
+                <div className="cart_item_price hidden-sm hidden-xs">
+                  <span>2.600.000d</span>
+                </div>
+                <div className="cart_item_quantity flex flex-col items-center">
+                  <InputNumber min={1} max={10} defaultValue={1} size="large" />
+                  <span className="py-4 w-full text-center hover:underline hover:text-red-500 cursor-pointer">Xoá</span>
+                </div>
               </div>
             </Col>
           </Row>
-          {/* end cart item  */}
-          {/* cart item  */}
-          <Row gutter={6} className="cart_item">
-            <Col xl={12}>
-              <div className="flex">
-                <div className="mr-2" style={{ maxWidth: "240px" }}>
-                  <img src={require("../../assets/images/products/product01.png")} alt="" />
-                </div>
-                <p className="self-start flex-1 max-line-three">
-                  {" "}
-                  Bình ngẩu pín huơu 4.8 lít Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde totam porro
-                  Lorem ipsum dolor sit amet consectetur. consectetur.
-                </p>
-              </div>
-            </Col>
-            <Col xl={6}>
-              <p className="text-center">2,500,000đ</p>
-            </Col>
-            <Col xl={6}>
-              <div className="flex flex-col items-center">
-                <InputNumber min={1} max={10} defaultValue={1} size="large" />
-                <span className="mt-1 cursor-pointer hover:underline hover:text-red-400">Xoá</span>
-              </div>
-            </Col>
-          </Row>
-          {/* end cart item  */}
-          {/* cart item  */}
-          <Row gutter={6} className="cart_item">
-            <Col xl={12}>
-              <div className="flex">
-                <div className="mr-2" style={{ maxWidth: "240px" }}>
-                  <img src={require("../../assets/images/products/product01.png")} alt="" />
-                </div>
-                <p className="self-start flex-1 max-line-three">
-                  {" "}
-                  Bình ngẩu pín huơu 4.8 lít Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde totam porro
-                  Lorem ipsum dolor sit amet consectetur. consectetur.
-                </p>
-              </div>
-            </Col>
-            <Col xl={6}>
-              <p className="text-center">2,500,000đ</p>
-            </Col>
-            <Col xl={6}>
-              <div className="flex flex-col items-center">
-                <InputNumber min={1} max={10} defaultValue={1} size="large" />
-                <span className="mt-1 cursor-pointer hover:underline hover:text-red-400">Xoá</span>
-              </div>
-            </Col>
-          </Row>
-          {/* end cart item  */}
         </Col>
-        <Col xl={6}>
-          <div className="flex justify-between pb-16 border-bttom-gray">
+
+        {/* cart action  */}
+        <Col xl={6} lg={6} md={24} sm={24} xs={24}>
+          <div className="flex justify-between pb-4 border-bttom-gray">
             Tạm tính: <b>14,500,000đ</b>
           </div>
-          <div className="flex justify-between items-end pt-16">
+          <div className="flex justify-between items-end pt-4">
             Thành tiền: <span className="font-bold text-md-custom text-red-600">14,500,000đ</span>
           </div>
           <p className="text-red-500 mt-4">*Trong trường hợp bạn có Mã giảm giá, vui lòng nhập ở bước thanh toán.</p>
           <div className="mt-4">
-            <ButtonSecondary className="uppercase" type="primary" size="full-btn">
+            <ButtonSecondary className="uppercase" type="secondary" size="full-btn">
               Thanh toán ngay
             </ButtonSecondary>
-            <ButtonSecondary className="uppercase mt-4" type="secondary" size="full-btn">
+            <ButtonSecondary className="uppercase mt-4" type="primary" size="full-btn">
               Tiếp tục mua hàng
             </ButtonSecondary>
           </div>

@@ -11,30 +11,30 @@ function ProductDetailsLayout() {
     <Section>
       {/* product  */}
       <Row gutter={16}>
-        <Col xl={10}>
+        <Col xl={10} lg={8} md={12}>
           {/* image  */}
           <Row>
             <Col xl={24} md={24} sm={24}>
-              <img src={require("../../assets/images/products/product01.png")} alt="" />
+              <img src={require("../../assets/images/products/product02.png")} alt="" />
             </Col>
           </Row>
           {/* image list  */}
-          <Row gutter={8} className="mt-4">
-            <Col className="cursor-pointer" xl={6} md={6} sm={6}>
-              <img src={require("../../assets/images/products/product01.png")} alt="" />
+          <Row gutter={8} className="mt-4 mb-4 md:mb-0">
+            <Col className="cursor-pointer border-red-700 border-solid border-2" xl={6} md={6} sm={6} xs={6}>
+              <img src={require("../../assets/images/products/product02.png")} alt="" />
             </Col>
-            <Col className="cursor-pointer" xl={6} md={6} sm={6}>
-              <img src={require("../../assets/images/products/product01.png")} alt="" />
+            <Col className="cursor-pointer" xl={6} md={6} sm={6} xs={6}>
+              <img src={require("../../assets/images/products/product02.png")} alt="" />
             </Col>
-            <Col className="cursor-pointer" xl={6} md={6} sm={6}>
-              <img src={require("../../assets/images/products/product01.png")} alt="" />
+            <Col className="cursor-pointer hidden-sm hidden-xs" xl={6} md={6}>
+              <img src={require("../../assets/images/products/product02.png")} alt="" />
             </Col>
-            <Col className="cursor-pointer border-red-700 border-solid border-2" xl={6} md={6} sm={6}>
-              <img src={require("../../assets/images/products/product01.png")} alt="" />
+            <Col className="cursor-pointer hidden-sm hidden-xs" xl={6} md={6}>
+              <img src={require("../../assets/images/products/product02.png")} alt="" />
             </Col>
           </Row>
         </Col>
-        <Col xl={8}>
+        <Col xl={8} lg={10} md={12}>
           {/* name  */}
           <h3 className="font-bold uppercase text-md-custom">Bình ngẩu pín hươu 4,8 lít</h3>
 
@@ -43,15 +43,15 @@ function ProductDetailsLayout() {
             <span className="ml-2">1 đánh giá</span>
           </p>
 
-          <p className="flex items-center gap-x-2">
-            <span className="primary_color">
+          <p className="flex items-center gap-x-2 text-lg">
+            <span className="text-primary-color">
               <AiFillCheckCircle />
             </span>
-            <span className="font-bold">Thương hiệu:</span> thegioiruoungam.com
+            <span className="font-bold">Thương hiệu:</span> nhunghuoutramnhan.com
           </p>
 
-          <p className="flex items-center gap-x-2">
-            <span className="primary_color">
+          <p className="flex items-center gap-x-2 text-lg">
+            <span className="text-primary-color">
               <AiFillCheckCircle />
             </span>
             <span className="font-bold">Tình trạng:</span>
@@ -63,42 +63,38 @@ function ProductDetailsLayout() {
             <span className="price_old">3,800,000₫</span>
           </div>
 
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quasi nisi ut, aliquam, distinctio rem
-            vitae voluptatibus nihil recusandae quae voluptates a dolorem ratione ipsum.
+          <p className="mt-4 max-line-4 text-lg">
+            Bình cá ngựa 0.75l được ngâm kết hợp từ nhiều nguyên liệu đem lại nhiều tác dụng hiệu quả, là sản phẩm chất
+            lượng bồi, tăng cường sinh lực mà phái mạnh ưu thích
           </p>
 
-          <ul className="mt-16 relative p-4 py-8 border-red">
+          <ul className="mt-10 relative p-4 py-8 border-red">
             <li className="flex items-start gap-x-4 ">
               <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
-              <p className="max-line-three">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore nihil vero. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
+              <p className="max-line-three text-lg">Cung cấp sản phẩm số lượng lớn cho doanh nghiệp. Có hóa đơn VAT.</p>
+            </li>
+            <li className="flex items-start gap-x-4 ">
+              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
+              <p className="max-line-three text-lg">
+                Hotline/Zalo {"("}24/7{")"}: 0375.524.580
               </p>
             </li>
             <li className="flex items-start gap-x-4 ">
               <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
-              <p className="max-line-three">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore nihil vero.
-              </p>
+              <p className="max-line-three text-lg">Giao hàng nhanh trên toàn quốc.</p>
             </li>
             <li className="flex items-start gap-x-4 ">
               <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
-              <p className="max-line-three">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="max-line-three text-lg">Giao hàng hỏa tốc 2h tại ...</p>
             </li>
             <li className="flex items-start gap-x-4 ">
               <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
-              <p className="max-line-three">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li className="flex items-start gap-x-4 ">
-              <AiFillCheckCircle className="min-w-fit text-green-600 mt-2" />{" "}
-              <p className="max-line-three">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore nihil vero. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Est voluptates accusantium repellendus.
+              <p className="max-line-three text-lg">
+                Hỗ trợ trả góp 0% lãi suất qua thẻ tín dụng với hóa đơn trên 3.000.000 vnđ
               </p>
             </li>
 
-            <span className="promotion_label absolute left-12 uppercase bg-red-500 text-white py-1 px-4 rounded-lg flex items-center gap-x-2">
+            <span className="promotion_label absolute left-4 uppercase bg-red-500 text-white py-1 px-4 rounded-lg flex items-center gap-x-2">
               <BsGift /> Khuyến mãi
             </span>
           </ul>
@@ -119,11 +115,11 @@ function ProductDetailsLayout() {
             </ButtonSecondary>
             <ButtonSecondary className="uppercase tracking-wider" type="third" size="full-btn">
               <BsFillTelephoneFill />
-              0999.999.999
+              0375.524.580
             </ButtonSecondary>
           </div>
         </Col>
-        <Col xl={6}>
+        <Col xl={6} lg={6} className="hidden-md hidden-sm hidden-xs">
           {/* delivery  */}
           <ul className="commit_list">
             <li className="commit_item mb-4 inline-block border-gray p-4">
@@ -131,7 +127,7 @@ function ProductDetailsLayout() {
                 <img className="" src={require("../../assets/images/icons/policy01.png")} alt="" />
               </div>
               <h5 className="text-center capitalize font-bold text-sm-custom">Giao hàng tận nơi</h5>
-              <p className="text-center mt-4 max-line-three text-xs-custom">
+              <p className="text-center mt-4 text-lg text-xs-custom">
                 Miễn phí giao hàng đơn trên 1.000.000đ. Giao hàng toàn quốc, thanh toán tại nhà
               </p>
             </li>
@@ -140,8 +136,9 @@ function ProductDetailsLayout() {
                 <img className="" src={require("../../assets/images/icons/policy02.png")} alt="" />
               </div>
               <h5 className="text-center capitalize font-bold text-sm-custom">Bảo đảm chất lượng</h5>
-              <p className="text-center mt-4 max-line-three text-xs-custom">
-                Miễn phí giao hàng đơn trên 1.000.000đ. Giao hàng toàn quốc, thanh toán tại nhà
+              <p className="text-center mt-4 text-xs-custom">
+                Tất cả các sản phẩm tại Nhunghuoutramnhan.com cung cấp đều đảm bảo chất lượng khi đến tay người tiêu
+                dùng.
               </p>
             </li>
             <li className="commit_item mb-4 inline-block border-gray p-4">
@@ -149,10 +146,8 @@ function ProductDetailsLayout() {
                 <img className="" src={require("../../assets/images/icons/policy03.png")} alt="" />
               </div>
               <h5 className="text-center capitalize font-bold text-sm-custom">Nguồn gốc uy tín</h5>
-              <p className="text-center mt-4 max-line-three text-xs-custom">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur molestias eos delectus ad
-                veritatis, quo atque inventore maiores praesentium enim id voluptatem corrupti modi commodi sed.
-                Pariatur placeat alias modi quos maiores a asperiores mollitia, nulla eius tenetur doloribus!
+              <p className="text-center mt-4 text-xs-custom">
+                Chúng tôi chỉ bán sản phẩm chất lượng, nói không với hàng giả, hàng kém chất lượng
               </p>
             </li>
           </ul>

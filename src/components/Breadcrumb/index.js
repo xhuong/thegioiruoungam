@@ -12,7 +12,7 @@ function Breadcrumb({ items, ...props }) {
   return (
     <BreadcrumbCustom>
       {items.map((item) => (
-        <BreadcrumbItem>{item.name}</BreadcrumbItem>
+        <BreadcrumbItem className="text-lg">{item.name}</BreadcrumbItem>
       ))}
     </BreadcrumbCustom>
   );

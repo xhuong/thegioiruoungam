@@ -31,7 +31,7 @@
     }
 
     svg {
-      font-size: 1.8rem;
+      font-size: 18px;
     }
   }
 
@@ -47,7 +47,7 @@
   &_title {
     color: $grayTextColor;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 16px;
     text-align: center;
     margin: 10px 0 10px 0;
     padding: 0 8px;
@@ -68,12 +68,12 @@
     display: flex;
     flex-direction: column;
     &_new {
-      font-size: 1.8rem;
+      font-size: 18px;
       color: $thirdColor;
       font-weight: bold;
     }
     &_old {
-      font-size: 1.7rem;
+      font-size: 17px;
       color: $grayTextLightColor;
       text-decoration: line-through;
     }
@@ -81,7 +81,7 @@
 
   &_add_to_cart {
     display: inline-flex;
-    font-size: 2.6rem;
+    font-size: 26px;
     color: $thirdColor;
   }
 }
