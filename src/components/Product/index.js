@@ -33,8 +33,8 @@ function Product({ id, name, imageUrl, oldPrice, newPrice, star, categoryId, dis
         <div className="product_price">
           {newPrice && oldPrice && (
             <React.Fragment>
-              <span className="product_price_new">{formatPrice(newPrice)}</span>
-              <span className="product_price_old">{formatPrice(oldPrice)}</span>
+              <span className="product_price_new">{formatPrice(newPrice)}đ</span>
+              <span className="product_price_old">{formatPrice(oldPrice)}đ</span>
             </React.Fragment>
           )}
           {!newPrice && !oldPrice && (
