@@ -15,7 +15,7 @@ function IntroductionPage() {
       </div>
       <Section>
         <div className="mb-4">
-          <h1 className="mb-4 text-lg">Giới thiệu công ty TNHH Nhung Hươu Trầm Nhân</h1>
+          <h2 className="mb-4 text-lg">Giới thiệu công ty TNHH Nhung Hươu Trầm Nhân</h2>
           <p className="text-center bg-red-600 text-white uppercase py-2 mb-4">Thông tin chung</p>
           <ul className="py-2 px-4 border border-dashed border-red-800">
             <li className="text-lg pb-2">

@@ -290,9 +290,16 @@ export const globalData = {
   news: {
     data: [
       {
+        blogTitle: "Nhung Hươu có tác dụng gì? Công dụng Của nhung hươu với sức khoẻ?",
+        dateUpload: "20/03/2023",
+        commentCount: 1,
+        blogDescription:
+          "Nhung hươu hay lộc nhung chính là sừng non của con hươu đực. Vào mỗi cuối mùa hè hàng năm, sừng hươu rụng đi và vào mùa xuân của năm sau, chỗ ấy sẽ mọc lên sừng mới. Sừng hươu lúc mới mọc sẽ rất mềm, phía ngoài phủ đầy lông. Sờ vào có cảm giác êm như nhung nên người ta gọi là nhung hươu. Vậy tác dụng của nó là gì?",
+      },
+      {
         blogTitle:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam",
-        dateUpload: "12/03/2023",
+        dateUpload: "20/03/2023",
         commentCount: 3,
         blogDescription:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam, distinctio a, hic numquam repellat non quidem, suscipit voluptatibus libero!",
@@ -300,16 +307,8 @@ export const globalData = {
       {
         blogTitle:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam",
-        dateUpload: "12/03/2023",
-        commentCount: 3,
-        blogDescription:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam, distinctio a, hic numquam repellat non quidem, suscipit voluptatibus libero!",
-      },
-      {
-        blogTitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam",
-        dateUpload: "12/03/2023",
-        commentCount: 3,
+        dateUpload: "20/03/2023",
+        commentCount: 15,
         blogDescription:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore quaerat fuga fugiat aperiam, distinctio a, hic numquam repellat non quidem, suscipit voluptatibus libero!",
       },

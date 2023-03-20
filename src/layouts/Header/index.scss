@@ -11,6 +11,9 @@
     column-gap: 6px;
     font-size: 13px;
     letter-spacing: 0.4px;
+    &_title {
+      color: #ffffff;
+    }
   }
   &_main {
     display: flex;

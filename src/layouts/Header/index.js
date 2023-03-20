@@ -18,7 +18,7 @@ function Header() {
       {/* header with branch  */}
       <div className="header_branch hidden-xs hidden-sm hidden-md">
         <GiEarthAmerica />
-        <p className="header_branch_title">Công Ty TNHH Nhung Hươu Trầm Nhân - Thương Hiệu Uy Tín</p>
+        <h1 className="header_branch_title">Công Ty TNHH Nhung Hươu Trầm Nhân - Thương Hiệu Uy Tín</h1>
       </div>
       <div className="container">
         {/* header with search  */}
