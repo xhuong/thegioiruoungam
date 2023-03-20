@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { AiFillEye } from "react-icons/ai";
 import Button from "../Button";
 import { formatPrice } from "../../Utils";
-import "./index.scss";
 import React from "react";
+import "./index.scss";
 
 function Product({ id, name, imageUrl, oldPrice, newPrice, star, categoryId, discount, ...props }) {
   const navigate = useNavigate();
   return (
     <div
-      className="product"
+      className="product border-gray"
       onClick={() => {
         navigate(`/product/${id}/details`);
       }}

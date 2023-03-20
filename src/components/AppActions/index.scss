@@ -3,7 +3,7 @@
     position: fixed;
     top: 30%;
     right: 0;
-    transform: translateX(68%);
+    transform: translateX(71%);
   }
   &_item {
     display: flex;
@@ -22,7 +22,7 @@
   }
 
   &_item:hover {
-    transform: translateX(-(100% - 32%));
+    transform: translateX(-(100% - 29%));
   }
   &_item_wrapper {
     width: 28px;

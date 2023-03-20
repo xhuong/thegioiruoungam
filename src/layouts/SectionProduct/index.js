@@ -25,7 +25,7 @@ function SectionProduct({ title, products, ...props }) {
             </Col>
           ))}
         </Row>
-        <p className="text-center py-8">Đã hiển thị tất cả 23 sản phẩm</p>
+        <p className="text-center py-2 mt-6 text-lg">Đã hiển thị tất cả 23 sản phẩm</p>
       </div>
     </div>
   );

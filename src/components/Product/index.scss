@@ -15,6 +15,36 @@
   }
   &_image_wrapper {
     position: relative;
+    overflow: hidden;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 120px;
+      height: 120px;
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+      transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &::before {
+      left: 100%;
+      bottom: 100%;
+    }
+
+    &::after {
+      top: 100%;
+      right: 100%;
+    }
+
+    &:hover::after {
+      transform: translate(calc(100% + 50px), calc(-100% - 50px));
+    }
+
+    &:hover::before {
+      transform: translate(calc(-100% - 50px), calc(100% + 50px));
+    }
   }
 
   &_button_wrapper {
@@ -50,7 +80,6 @@
   &_title {
     color: $grayTextColor;
     font-weight: 500;
-    font-size: 16px;
     text-align: center;
     margin: 10px 0 10px 0;
     padding: 0 8px;

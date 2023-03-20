@@ -18,34 +18,34 @@ function SliderSecondary() {
       <Slider {...settings}>
         <li className="slider_secondary_item">
           <div className="slider_secondary_image_wrapper">
-            <img src={require("../../assets/images/customers/customer01.png")} alt="" />
+            <img src={require("../../assets/images/customers/customer03.png")} alt="" />
           </div>
           <p className="slider_secondary_customer_opinion">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum neque natus dolorem veniam molestiae
-            omnis fugiat adipisci dolor, itaque quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            consequuntur facere nostrum? Distinctio quo blanditiis iusto eligendi!
+            Chồng tôi làm việc văn phòng, ngồi nhiều hay bị đau lưng, nhức mỏi qua tìm hiểu tôi thấy rượu nhung hươu rất
+            tốt và có nhiều công dụng nữa. Tôi đã mua rượu huyết nhung hươu tại Nhung Hươu Trầm Nhân, rượu ở đây rất
+            chất lượng, chồng tôi rất thích.
           </p>
-          <p className="slider_secondary_customer">Anh Nguyễn Duy Bịp - Nhân viên cao cấp tại công ty đa cấp</p>
+          <p className="slider_secondary_customer">Cô Trương Thanh Hoa - Kinh Doanh Nội Thất</p>
         </li>
         <li className="slider_secondary_item">
           <div className="slider_secondary_image_wrapper">
             <img src={require("../../assets/images/customers/customer01.png")} alt="" />
           </div>
           <p className="slider_secondary_customer_opinion">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum neque natus dolorem veniam molestiae
-            omnis fugiat adipisci dolor, itaque quae. Distinctio quo blanditiis iusto eligendi!
+            Tôi có mua nhung hươu tươi tại Nhung Hươu Trầm Nhân để sử dụng và phải nói rằng nhung hươu rất tươi và chất
+            lượng. Sẽ tiếp tục ủng hộ cửa hàng trong những lần tới.
           </p>
-          <p className="slider_secondary_customer">Anh Nguyễn Duy Bịp - Nhân viên cao cấp tại công ty đa cấp</p>
+          <p className="slider_secondary_customer">Anh Nguyễn Văn Thắng - Nhân Viên Bất Động Sản</p>
         </li>
         <li className="slider_secondary_item">
           <div className="slider_secondary_image_wrapper">
-            <img src={require("../../assets/images/customers/customer01.png")} alt="" />
+            <img src={require("../../assets/images/customers/customer02.png")} alt="" />
           </div>
           <p className="slider_secondary_customer_opinion">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum neque natus dolorem veniam molestiae
-            omnis fugiat adipisci dolor, itaque quae. Distinctio quo blanditiis iusto eligendi!
+            Nhung Hươu ở đây rất chất lượng mua về ngâm rượu uống rất tốt. Nhân viên giao hàng rất nhanh. Sẽ tiếp tục
+            ủng hộ cửa hàng.
           </p>
-          <p className="slider_secondary_customer">Anh Nguyễn Duy Bịp - Nhân viên cao cấp tại công ty đa cấp</p>
+          <p className="slider_secondary_customer">Anh Huỳnh Nhật Huy - Kỹ Sư Giám Sát Công Trình</p>
         </li>
       </Slider>
     </div>
